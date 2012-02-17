@@ -1,0 +1,80 @@
+<text
+       xml:space="preserve"
+       style="font-size:163.45837402px;font-style:normal;font-weight:normal;line-height:126.99999809%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="-6000"
+       y="0"
+       id="text2996"
+       sodipodi:linespacing="127%"><tspan
+         sodipodi:role="line"
+         id="tspan2998"
+         x="-6000"
+         y="0">1. Images in this layer</tspan></text>
+</g>
+  <g
+     id="layer2"
+     inkscape:label="filter"
+     inkscape:groupmode="layer"
+     style="opacity:0.65">
+    <!-- transparency -->
+    
+	   <text
+       xml:space="preserve"
+       style="font-size:148.37477112px;font-style:normal;font-weight:normal;line-height:126.99999809%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="-6000"
+       y="880"
+       id="text3035"
+       sodipodi:linespacing="127%"><tspan
+         sodipodi:role="line"
+         id="tspan3037"
+         x="-6000"
+         y="600">2. Filter in this layer. </tspan><tspan
+         sodipodi:role="line"
+         x="-6000"
+         y="800"
+         id="tspan3039">Modify the size and switch off when needed</tspan></text>
+  </g>
+  <g
+     id="layer3"
+     inkscape:label="graph"
+     inkscape:groupmode="layer"
+     style="filter:url(#filter2999)">
+    <!-- the Multiply Filter. Allows to see through rectangles. -->
+    <rect
+       style="fill:#ff0000;fill-opacity:1;stroke:none"
+       id="rect3016"
+       width="1326.7002"
+       height="690.48291"
+       x="-4000"
+       y="-700"
+       transform="scale(1,-1)" />
+	   
+		 <text
+       style="font-size:163.45837402px;font-style:normal;font-weight:normal;line-height:126.99999809%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="-6000"
+       y="300"
+       id="text2996-4"
+       xml:space="default"
+       sodipodi:linespacing="127%">
+      <tspan
+         sodipodi:role="line"
+         id="tspan2998-0"
+         x="-6000"
+         y="300">3. Make the highlights in this layer.</tspan>
+    </text>
+
+
+<text
+       style="font-size:163.45837402px;font-style:normal;font-weight:normal;line-height:126.99999809%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="-6000"
+       y="-2000"
+       id="text2996-4"
+       xml:space="default"
+       sodipodi:linespacing="127%">
+      <tspan
+         sodipodi:role="line"
+         id="tspan2998-0"
+         x="-6000"
+         y="-2000">Front Page matrix generator. Contact http://numeroteca.org for questions.</tspan>
+    </text>
+  </g>
+</svg>

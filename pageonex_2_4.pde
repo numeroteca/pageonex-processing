@@ -4,7 +4,7 @@ String[] Names;
 String[] newspaperName;
 
 int theYear = 11; //year
-int theMonth = 12; //month
+int theMonth = 12; //month  
 int DayMonthInit = 1; //day we atart counting in the month
 int DayMonthLast = 31; //last day we take in account
 

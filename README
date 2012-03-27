@@ -10,9 +10,11 @@ You should have received a copy of the GNU General Public License along with thi
 It is hosted at https://github.com/numeroteca/PageOneX where you can find updates, documentation, tutorials and how-tos.
 
 ----More----
-PageOneX is a tool build in Prcessing to scrap front page images from newspapers form kiosko.net, download them and build a matrix in .svg to be able to measure the surface dedicated to a a special thread.
+PageOneX is a tool build in Processing to scrap newspapers' front pages images from kiosko.net, download them and build a matrix in .svg to be able to measure the surface dedicated to a a special thread.
 
 See examples: http://numeroteca.org/cat/frontpage-newspaper/
+
+An online version of this tool is underway.
 
 Analyzing newspapers’ front pages to interpret the Mainstream Media ecology. Researching the #15M, #Occupy movement and the Arab Spring. Interested in the relationship between Mainstream Media and social Media (twitter).
 Post: http://civic.mit.edu/blog/pablo/analyzing-newspapers-front-pages

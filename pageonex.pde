@@ -3,8 +3,8 @@ String[] dates;
 String[] Names;
 String[] newspaperName;
 
-int theYear = 11; //year
-int theMonth = 12; //month  
+int theYear = 12; //year
+int theMonth = 3; //month  
 int DayMonthInit = 1; //day we atart counting in the month
 int DayMonthLast = 31; //last day we take in account
 
@@ -17,12 +17,12 @@ int f = 0;
 int posDate = posXinit + 4;
 
 
-String Country = "us"; // "es" for Spain "us" for USA
-String nameMain = "occupy"; //name of the folder
-int heightFrontPage = 1500; //height of the newspaper. the width is 750px. 1500px for US newspaper. 1100px for Spanish
+String Country = "es"; // "es" for Spain "us" for USA
+String nameMain = "primavera15m"; //name of the folder
+int heightFrontPage = 1100; //height of the newspaper. the width is 750px. 1500px for US newspaper. 1100px for Spanish
 int separation = 100; //separation between rows
 int heightRow =heightFrontPage + separation ; 
-int numberNewspapers = 6;
+int numberNewspapers = 7;
 int initial = 0;
 
 int count = 0;
@@ -38,20 +38,22 @@ void setup() {
 
 
   //find the name of thewspaper your want at http://kiosko.net
-  
-  grabFrontPages ("wsj");
-  grabFrontPages ("newyork_times");
-  grabFrontPages ("washington_post");
-  grabFrontPages ("latimes");
-  grabFrontPages ("boston_globe");
-  grabFrontPages ("usa_today");
+ 
+  grabFrontPages ("elpais");
+  grabFrontPages ("elmundo");
+  grabFrontPages ("abc");
+  grabFrontPages ("lavanguardia");
+  grabFrontPages ("larazon");
+  grabFrontPages ("publico");
+  grabFrontPages ("la_gaceta");
 
-  writeFrontPages ("wsj","WSJ");
-  writeFrontPages ("newyork_times", "NYtimes");
-  writeFrontPages ("washington_post", "WP");    
-  writeFrontPages ("latimes", "LAtimes");
-  writeFrontPages ("boston_globe","Boston Globe");
-  writeFrontPages ("usa_today","USA Today");
+  writeFrontPages ("elpais","El País");
+  writeFrontPages ("elmundo", "El Mundo");
+  writeFrontPages ("abc", "ABC");    
+  writeFrontPages ("lavanguardia", "La Vanguardia");
+  writeFrontPages ("larazon","La Razón");
+  writeFrontPages ("publico","Público");
+  writeFrontPages ("la_gaceta","La Gaceta");
   
   /*
   grabFrontPages ("latimes");

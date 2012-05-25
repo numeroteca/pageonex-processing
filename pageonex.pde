@@ -3,26 +3,28 @@ String[] dates;
 String[] Names;
 String[] newspaperName;
 
+//Variables to control
 int theYear = 12; //year
-int theMonth = 3; //month  
+int theMonth = 5; //month  
 int DayMonthInit = 1; //day we atart counting in the month
 int DayMonthLast = 31; //last day we take in account
 
 int dateDay = DayMonthInit;
 
-String stheMonth  = nf(theMonth, 2);
-int posXinit = 0; //790pixels is the width of the front page
+
+int posXinit = 0; //790 pixels is the width of one front page imape
+String stheMonth  = nf(theMonth, 2); //convert the month to a 2 digit
 int i = 0;
 int f = 0;
 int posDate = posXinit + 4;
 
 
 String Country = "es"; // "es" for Spain "us" for USA
-String nameMain = "primavera15m"; //name of the folder
+String nameMain = "12m15m-mayo2012-b"; //name of the folder
 int heightFrontPage = 1100; //height of the newspaper. the width is 750px. 1500px for US newspaper. 1100px for Spanish
 int separation = 100; //separation between rows
 int heightRow =heightFrontPage + separation ; 
-int numberNewspapers = 7;
+int numberNewspapers = 8; //Important to include here the number of newspaper to make the funcionts work properly when builing the svg
 int initial = 0;
 
 int count = 0;
@@ -35,27 +37,42 @@ void setup() {
   String[] imagesb;
   String[] Names;
   newspaperName = new String[numberNewspapers];
-
-
+/*
+  grabFrontPages ("newyork_times");
+  grabFrontPages ("washington_post");
+  
+  writeFrontPages ("newyork_times","NY times");
+  writeFrontPages ("washington_post","Washington Post");
+*/
   //find the name of thewspaper your want at http://kiosko.net
+  
+  /*grabFrontPages ("abc");
+  grabFrontPages ("larazon");*/
+  
+ /* Example of spanish newspapers*/
  
   grabFrontPages ("elpais");
   grabFrontPages ("elmundo");
   grabFrontPages ("abc");
-  grabFrontPages ("lavanguardia");
-  grabFrontPages ("larazon");
-  grabFrontPages ("publico");
-  grabFrontPages ("la_gaceta");
+ grabFrontPages ("lavanguardia");
+ grabFrontPages ("larazon");
+  grabFrontPages ("elperiodico");
+ grabFrontPages ("la_gaceta");
+grabFrontPages ("20minutos_madrid");
+  
+  //  writeFrontPages ("abc", "ABC");    
+ // writeFrontPages ("larazon","La Razón");
 
   writeFrontPages ("elpais","El País");
   writeFrontPages ("elmundo", "El Mundo");
   writeFrontPages ("abc", "ABC");    
   writeFrontPages ("lavanguardia", "La Vanguardia");
   writeFrontPages ("larazon","La Razón");
-  writeFrontPages ("publico","Público");
+  writeFrontPages ("elperiodico","El Periódico");
   writeFrontPages ("la_gaceta","La Gaceta");
+   writeFrontPages ("20minutos_madrid","20minutos");
   
-  /*
+  /* Example of US newspapers
   grabFrontPages ("latimes");
   grabFrontPages ("sf_chronicle");
   grabFrontPages ("mercure_news");
@@ -178,12 +195,13 @@ void writeDates (int posY, int posDate) {
 void writeNames () {
   println("count: " + count);
   println("newspaperName[*]: " + newspaperName);
-  Names = new String[7];
+  Names = new String[numberNewspapers]; //viene un "7" en estos corchetes, ccamio a 8 a ver qué pasa
   int verticalText = heightFrontPage - 50;
   
   for (int i=0; i<count; i++) { 
     
-    Names[i]="<text xml:space=\"preserve\" " + "style=\"font-size:250px;font-style:normal;font-weight:normal;line-height:120%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:sans-serif\""+
+    Names[i]="<text xml:space=\"preserve\" " +
+    "style=\"font-size:250px;font-style:normal;font-weight:normal;line-height:120%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:sans-serif\""+
       " x=\"-100\" y=\""+ verticalText+"\" id=\"txt"
       + "\" sodipodi:linespacing=\"127%\"><tspan sodipodi:role=\"line\" id=\"tspan3001\"" 
       + " x=\"-100\" y=\""+ verticalText+"\" style=\"text-align:end;text-anchor:end\">"+ newspaperName[i]+"</tspan></text>";
